@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$if(title)$$title$ - $endif$$if(site_title)$$site_title$$else$japiirainen.xyz$endif$</title>
+  <link rel="stylesheet" href="style.css">
+  $if(math)$
+  $math$
+  $endif$
+  $for(header-includes)$
+  $header-includes$
+  $endfor$
+</head>
+<body>
+  <main>
+$body$
+  </main>
+
+  <footer>
+    <hr>
+    <p><a href="./">Home</a> <a href="about.html">About</a></p>
+    <p>&copy; $if(author)$$author$$else$Joona Piirainen$endif$</p>
+  </footer>
+</body>
+</html>

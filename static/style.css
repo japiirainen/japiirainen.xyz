@@ -1,0 +1,99 @@
+:root {
+  color-scheme: light dark;
+}
+
+html {
+  line-height: 1.5;
+}
+
+body {
+  font-family: georgia, serif;
+  font-size: large;
+  margin: 0 auto;
+  max-width: 40em;
+  overflow-wrap: break-word;
+  padding: 0 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  margin: 1.25em 0 0.25em;
+}
+
+a {
+  color: inherit;
+}
+
+pre,
+code {
+  font-family: monospace, monospace;
+  font-size: 0.9em;
+}
+
+pre {
+  background: #eee;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+blockquote {
+  background: #eee;
+  border-left: thick solid #ccc;
+  margin-left: 0;
+  padding: 0.5em;
+}
+
+hr {
+  border: 0;
+  border-bottom: 0.15em dotted #999;
+  margin: 1.5em auto;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  margin: 0.4em 0;
+}
+
+footer a + a {
+  margin-left: 1.5em;
+}
+
+.date {
+  margin-top: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+    color: #bbb;
+  }
+
+  a:link {
+    color: #9bf;
+  }
+
+  a:visited {
+    color: #a9f;
+  }
+
+  blockquote,
+  pre {
+    background: #000;
+  }
+
+  blockquote {
+    border-left-color: #333;
+  }
+
+  hr {
+    border-bottom-color: #666;
+  }
+}
